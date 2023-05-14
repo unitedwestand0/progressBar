@@ -1,0 +1,48 @@
+body{
+  margin: 20px;
+}
+
+label{
+  font-family: sans-serif;
+  margin-right: 10px;
+}
+
+progress{
+  appearance:none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  width: 35%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(238, 238, 238,1);
+  /*border: 2px solid #53FBE5;*/
+  /*border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; */
+}
+
+/* Chrome,Safari,Edge SudoClass */
+progress[value]::-webkit-progress-bar{
+  background-color: rgba(238,238,238,1);
+  /* border: 2px solid #53FBE5;*/
+
+}
+/* progress bar is the background - webkit */
+progress[value]::-webkit-progress-value{
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  background-image: linear-gradient(45deg, #53fbe5 25%, #00b4ff 25%, #00b4ff 50%, #53fbe5 50%, #53fbe5 75%, #00b4ff 75%, #00b4ff 100%);
+  background-size: 28.28px 28.28px;
+  /*background-color:#53FBE5;*/
+
+}
+/* progress bar is the bar in mozilla */
+progress[value]::-moz-progress-bar{
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  background-image: linear-gradient(45deg, #53fbe5 25%, #00b4ff 25%, #00b4ff 50%, #53fbe5 50%, #53fbe5 75%, #00b4ff 75%, #00b4ff 100%);
+  background-size: 28.28px 28.28px;
+  /*background-color:#53FBE5;*/
+
+}
