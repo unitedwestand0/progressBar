@@ -22,7 +22,7 @@ progress{
   border-bottom-left-radius: 10px; */
 }
 
-/* Chrome,Safari,Edge SudoClass */
+/* Chrome,Safari,Edge Pseudo Class */
 progress[value]::-webkit-progress-bar{
   background-color: rgba(238,238,238,1);
   /* border: 2px solid #53FBE5;*/
